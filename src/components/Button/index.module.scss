@@ -1,0 +1,22 @@
+@import "styles/base-refs";
+
+.button {
+  border: none;
+  background: $blue;
+  color: $white;
+  font-family: $ui-font;
+  font-size: 24px;
+  padding: 12px 8px;
+
+  &:hover {
+    background: darken($blue, 10%);
+  }
+
+  &.active {
+    background: darken($blue, 20%);
+
+    &:hover {
+      background: darken($blue, 30%);
+    }
+  }
+}
