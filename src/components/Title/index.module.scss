@@ -3,4 +3,8 @@
 .title {
   color: $blue;
   font-family: $ui-font;
+
+  @include mobile {
+    color: red;
+  }
 }
